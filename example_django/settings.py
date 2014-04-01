@@ -39,7 +39,8 @@ INSTALLED_APPS = (
     'rest_framework',
     'django_tables2',
     'bootstrapform',
-    'example_django_hot.hot'
+    'hot',
+    'example_app'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -51,9 +52,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'example_django_hot.urls'
+ROOT_URLCONF = 'urls'
 
-WSGI_APPLICATION = 'example_django_hot.wsgi.application'
+WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database

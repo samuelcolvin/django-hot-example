@@ -1,9 +1,3 @@
-[submodule "django/hot"]
-	path = django/hot
-	url = git@github.com:samuelcolvin/django-hot.git
-[submodule "django_example/hot"]
-	path = django_example/hot
-	url = git@github.com:samuelcolvin/django-hot.git
-[submodule "example_django/hot"]
-	path = example_django/hot
+[submodule "example_django/HotDisplay"]
+	path = example_django/HotDisplay
 	url = git@github.com:samuelcolvin/django-hot.git
