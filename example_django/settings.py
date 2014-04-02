@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+REL_SITE_ROOT = os.path.relpath(os.path.dirname(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -70,13 +72,13 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-gb'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
-USE_L10N = True
+USE_L10N = False
 
 USE_TZ = True
 
@@ -85,3 +87,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+
+
+# HotDisplay Settings
+DISPLAY_APPS = ('example_app',) # 'HotDisplay'
+# HOT_PERMITTED_GROUPS = 'all'
+# LOGIN_URL = '%s/login/' % SUB_SITE
+# LOGIN_EXEMPT_URLS = ['login/']
+# LOGIN_REDIRECT_URL = '%s/' % SUB_SITE
+# PAGE_BASE = 'page_base.html'
+# SK_VIEW_SETTINGS ={'viewname': 'setup', 'args2include': [False, True], 'base_name': 'Setup'}
+# 
+SITE_TITLE = 'HotDisplay'
+INDEX_URL_NAME = 'index'
+TOP_MENU = [{'url': 'hot_display', 'name': 'Display', 'glyph': 'cog'}]
+
+# HOT_ID_IN_MODEL_STR = True

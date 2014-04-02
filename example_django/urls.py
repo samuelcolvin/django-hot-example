@@ -5,8 +5,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'example_django_hot.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
+    url(r'^$', 'example_app.views.index', name='index'),
+    url(r'^', include('HotDisplay.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
