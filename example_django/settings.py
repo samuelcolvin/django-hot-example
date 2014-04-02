@@ -39,7 +39,7 @@ INSTALLED_APPS = (
     'rest_framework',
     'django_tables2',
     'bootstrapform',
-    'hot',
+    'HotDisplay',
     'example_app'
 )
 
