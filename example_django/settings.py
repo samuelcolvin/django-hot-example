@@ -92,7 +92,8 @@ STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
 
 # HotDisplay Settings
 DISPLAY_APPS = ('example_app',) # 'HotDisplay'
-# HOT_PERMITTED_GROUPS = 'all'
+## ALL or AUTH or list of groups
+# HOT_PERMITTED_GROUPS = 'ALL'
 # LOGIN_URL = '%s/login/' % SUB_SITE
 # LOGIN_EXEMPT_URLS = ['login/']
 # LOGIN_REDIRECT_URL = '%s/' % SUB_SITE
